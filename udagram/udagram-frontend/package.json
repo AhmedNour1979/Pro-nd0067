@@ -4,11 +4,11 @@
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {
-    "setup": "npm  rm -R node_modules && npm rm package-lock.json && npm cache clean --force && npm install",
+    "setup": "npm  rm -R node_modules && npm rm package-lock.json && npm cache clean --force",
     "setup-0": "npm  rm -R node_modules && npm rm package-lock.json && npm cache clean --force && npm install && npm install --legacy-peer-deps && npm config set legacy-peer-deps true",
     "ng": "ng",
     "start": "ng serve",
-    "build": "npm run setup-0 && ng build",
+    "build": "npm run setup && ng build",
     "deploy": "npm install -f && npm run build && chmod +x bin/deploy.sh && bin/deploy.sh",
     "test": "ng test --watch=false",
     "lint": "echo ng lint",
