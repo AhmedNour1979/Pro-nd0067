@@ -1,5 +1,5 @@
 echo 'Deploy AWS EB'
-eb init --region us-east-2 --platform 'Node.Js 14 running on 64bit Amazon Linux 2' udagram-api
+eb init --region us-east-1 --platform 'Node.Js 14 running on 64bit Amazon Linux 2' udagram-api
 eb setenv AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
 eb setenv AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION
 eb setenv AWS_SECRT_ACCESS_KEY=$AWS_SECRT_ACCESS_KEY
