@@ -13,10 +13,10 @@ jobs:
     steps:
       # install node and checkout code
       - node/install:
-          node-version: '14.15'  
-      - aws-elastic-beanstalk/setup       
+          node-version: '14.15'         
       - checkout
       - aws-cli/setup
+      - aws-elastic-beanstalk/setup
       # Use root level package.json to install dependencies in the frontend app
       - run:
           name: Install Front-End Dependencies
