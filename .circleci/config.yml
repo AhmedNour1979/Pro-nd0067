@@ -81,5 +81,11 @@ workflows:
           requires:
             - build
       - deploy:
+      - hold:
+          filters:
+            branches:
+              only:
+                - master
+          type: approval
           requires:
             - deploy
