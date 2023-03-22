@@ -2,9 +2,10 @@ echo 'Deploy AWS EB'
 
 eb init --region us-east-1 --platform 'Node.Js 14 running on 64bit Amazon Linux 2' Pro-nd0067-dev
 echo 'finished eb init'
-# eb list
-# eb use Pro-nd0067-dev
-# echo 'now using Pro-nd0067-dev'
+eb list
+eb use Pro-nd0067-dev
+echo 'now using Pro-nd0067-dev'
+
 $ eb create --sample --single --instance-types t2.small
 echo 'finished eb create --sample --single --instance-types t2.small'
 
