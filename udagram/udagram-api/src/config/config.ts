@@ -1,10 +1,11 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-// ENV variables
+// ENV variables //
 // - AWS_ACCESS_KEY_ID
 // - AWS_SECRET_ACCESS_KEY
 // Are Also needed
+
 console.log("process.env.POSTGRES_PASSWORD=" + process.env.POSTGRES_PASSWORD);
 export const config = {
   username: `${process.env.POSTGRES_USERNAME}`,
