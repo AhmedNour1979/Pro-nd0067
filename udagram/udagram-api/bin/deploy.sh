@@ -17,6 +17,15 @@ eb setenv AWS_BUCKET=$AWS_BUCKET
 eb setenv URL=$URL
 eb setenv ServerPort=$ServerPort
 eb setenv JWT_SECRET=$JWT_SECRET
+
+cp -rf src/config www/config
+cp -R .elasticbeanstalk www/.elasticbeanstalk
+cp .npmrc www/.npmrc
+cp package.json www/package.json
+cd www
+zip -r Archive.zip .
+cd ..
+
 eb list
 eb use Pro-nd0067-dev
 eb deploy
